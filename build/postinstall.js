@@ -9,6 +9,7 @@ function gulpInstall(commands, opts) {
 
 	const result = cp.spawnSync(gulp, commands, opts);
 
+  console.log(result);
 	if (result.error || result.status !== 0) {
 		process.exit(1);
 	}
